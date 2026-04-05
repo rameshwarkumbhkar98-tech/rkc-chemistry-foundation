@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +18,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero" id="home">
-    <nav class="navbar">
+  <header class="site-header" id="home">
+    <nav class="navbar section-shell">
       <a class="brand" href="#home">
         <img
           class="brand-logo"
-          src="Logo.png" height="180"
+          src="Logo.png"
           alt="RKC Chemistry Foundation logo"
           onerror="this.style.display='none';"
         >
@@ -39,71 +40,71 @@
       </button>
 
       <div class="nav-links" id="navLinks">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#courses" data-i18n="nav.courses">Courses</a>
-        <a href="#notes" data-i18n="nav.notes">Notes</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a class="nav-link" href="#course-class11">Class 11</a>
+        <a class="nav-link" href="#course-class12">Class 12</a>
+        <a class="nav-link" href="#course-jee">JEE</a>
+        <a class="nav-link" href="#course-neet">NEET</a>
+        <a class="nav-link" href="#course-cuet">CUET</a>
+        <a class="nav-link" href="#course-csir">CSIR NET</a>
       </div>
 
-      <div class="lang-toggle" aria-label="Language switcher">
-        <button class="lang-btn active" id="langEn" type="button" data-lang="en" aria-pressed="true">EN</button>
-        <button class="lang-btn" id="langHi" type="button" data-lang="hi" aria-pressed="false">हिंदी</button>
-      </div>
+      <div class="nav-actions">
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-btn active" id="langEn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" id="langHi" type="button" data-lang="hi" aria-pressed="false">हिंदी</button>
+        </div>
 
-      <div class="nav-profile">
-      <img src="Rameshwar sir.png" style="width:150px; border-radius:50%;"
-          class="nav-profile-image"
-          alt="Rameshwar Sir"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='none';"
-        >
-        <span class="nav-profile-name">Rameshwar Sir</span>
-      </div>
-
-      <div class="social-bar nav-social" aria-label="Social media links">
-        <a class="social-icon-link social-whatsapp" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-          <span class="social-icon-label" aria-hidden="true">W</span>
-        </a>
-        <a class="social-icon-link social-youtube" href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
-          <span class="social-icon-label" aria-hidden="true">Y</span>
-        </a>
-        <a class="social-icon-link social-telegram" href="https://t.me/" target="_blank" rel="noreferrer" aria-label="Telegram">
-          <span class="social-icon-label" aria-hidden="true">T</span>
-        </a>
-        <a class="social-icon-link social-facebook" href="https://www.facebook.com/share/1AtFQuzsAV/" target="_blank" rel="noreferrer" aria-label="Facebook">
-          <span class="social-icon-label" aria-hidden="true">f</span>
-        </a>
+        <div class="nav-profile">
+          <img
+            class="nav-profile-image"
+            src="Rameshwar sir.png"
+            alt="Rameshwar Sir"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='none';"
+          >
+          <span class="nav-profile-name">Rameshwar Sir</span>
+        </div>
       </div>
     </nav>
 
+    <div class="hero-particles" aria-hidden="true">
+      <span class="particle particle-1"></span>
+      <span class="particle particle-2"></span>
+      <span class="particle particle-3"></span>
+      <span class="particle particle-4"></span>
+      <span class="particle particle-5"></span>
+      <span class="particle particle-6"></span>
+    </div>
+
     <section class="hero-content section-shell">
       <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Trusted Chemistry Learning</p>
-        <h1 data-i18n="hero.title">Complete Chemistry Platform for Class 11, 12, JEE, NEET, CUET, CSIR NET</h1>
+        <p class="eyebrow" data-i18n="hero.eyebrow">AI Powered Chemistry Learning</p>
+        <h1 id="heroTyping" data-typing-text="AI Powered Complete Learning Platform 🇮🇳">AI Powered Complete Learning Platform</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">From Class 11 to CSIR NET</p>
+        <div class="hero-identity">
+          <span class="identity-byline">By Rameshwar Kumbhkar</span>
+          <span class="identity-tagline">Made for Indian Students 🇮🇳</span>
+        </div>
         <p class="hero-text" data-i18n="hero.text">
-          Build strong concepts, improve problem-solving speed, and prepare with confidence through
-          structured chemistry learning for school, entrance, and advanced competitive exams.
+          Choose your exam, learn content, practice daily, and ask AI doubts through one modern chemistry platform.
         </p>
+        <div class="hero-pills">
+          <a class="hero-pill" href="#course-neet">NEET</a>
+          <a class="hero-pill" href="#course-jee">JEE</a>
+          <a class="hero-pill" href="#course-cuet">CUET</a>
+          <a class="hero-pill" href="#course-csir">CSIR NET</a>
+        </div>
         <div class="hero-actions">
-          <a class="button button-primary strong-cta" href="#courses" data-i18n="hero.cta_primary">Start Learning Now</a>
-          <a class="button button-secondary strong-cta" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" data-i18n="hero.cta_secondary">Join on WhatsApp</a>
+          <a class="button button-primary strong-cta ripple-button" href="#courses" data-i18n="hero.cta_primary">Start Learning</a>
+          <a class="button button-secondary strong-cta ripple-button" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" data-i18n="hero.cta_secondary">Join WhatsApp</a>
         </div>
       </div>
 
       <div class="hero-card">
         <div class="card-glow"></div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <strong>4</strong>
-            <span data-i18n="hero.stat_1">Focused Programs</span>
-          </div>
-          <div class="stat-item">
-            <strong>100%</strong>
-            <span data-i18n="hero.stat_2">Concept-Driven Teaching</span>
-          </div>
-          <div class="stat-item">
-            <strong>24/7</strong>
-            <span data-i18n="hero.stat_3">Easy Notes Access</span>
-          </div>
+        <div class="hero-card-copy">
+          <span class="panel-badge">Premium Learning Stack</span>
+          <h2>Content, practice, videos, and AI support in one workflow</h2>
+          <p>Move from school learning to advanced exam preparation with a cleaner, smarter, more guided system.</p>
         </div>
         <div class="molecule">
           <span class="atom atom-a"></span>
@@ -117,6 +118,27 @@
   </header>
 
   <main>
+    <section class="stats-section section-shell" id="platform-overview">
+      <div class="stats-grid">
+        <article class="stat-card stat-card-featured">
+          <strong>School to Research Level</strong>
+          <span>Class 11, 12, JEE, NEET, CUET, CSIR NET</span>
+        </article>
+        <article class="stat-card">
+          <strong class="count-up" data-target="6">0</strong>
+          <span>Exam pathways covered</span>
+        </article>
+        <article class="stat-card">
+          <strong class="count-up" data-target="24">0</strong>
+          <span>Hours access to notes and AI support</span>
+        </article>
+        <article class="stat-card">
+          <strong class="count-up" data-target="100">0</strong>
+          <span>Percent concept focused learning</span>
+        </article>
+      </div>
+    </section>
+
     <section class="about section-shell" id="about">
       <div class="section-heading">
         <p class="eyebrow" data-i18n="about.eyebrow">About</p>
@@ -173,32 +195,32 @@
       </div>
 
       <div class="course-grid">
-        <article class="course-card">
+        <article class="course-card" id="course-class11">
           <span class="course-badge" data-i18n="courses.class11_badge">Foundation</span>
           <h3 data-i18n="courses.class11_title">Class 11</h3>
           <p data-i18n="courses.class11_text">Build a strong base in core chemistry concepts with chapter-wise learning and practice.</p>
         </article>
-        <article class="course-card">
+        <article class="course-card" id="course-class12">
           <span class="course-badge" data-i18n="courses.class12_badge">Boards</span>
           <h3 data-i18n="courses.class12_title">Class 12</h3>
           <p data-i18n="courses.class12_text">Master syllabus coverage, important questions, and structured revision for board exams.</p>
         </article>
-        <article class="course-card">
+        <article class="course-card" id="course-jee">
           <span class="course-badge" data-i18n="courses.jee_badge">Competitive</span>
           <h3 data-i18n="courses.jee_title">JEE</h3>
           <p data-i18n="courses.jee_text">Develop strong numerical chemistry skills, topic mastery, and exam-focused problem solving for JEE preparation.</p>
         </article>
-        <article class="course-card">
+        <article class="course-card" id="course-neet">
           <span class="course-badge" data-i18n="courses.neet_badge">Medical Entrance</span>
           <h3 data-i18n="courses.neet_title">NEET</h3>
           <p data-i18n="courses.neet_text">Focused preparation with conceptual clarity, MCQ strategy, and exam-oriented problem solving.</p>
         </article>
-        <article class="course-card">
+        <article class="course-card" id="course-cuet">
           <span class="course-badge" data-i18n="courses.cuet_badge">University Entrance</span>
           <h3 data-i18n="courses.cuet_title">CUET</h3>
           <p data-i18n="courses.cuet_text">Study chemistry with an exam-oriented approach that supports accuracy, speed, and confidence for CUET.</p>
         </article>
-        <article class="course-card">
+        <article class="course-card" id="course-csir">
           <span class="course-badge" data-i18n="courses.csir_badge">Advanced</span>
           <h3 data-i18n="courses.csir_title">CSIR NET</h3>
           <p data-i18n="courses.csir_text">High-level chemistry preparation with deeper understanding, precision, and targeted practice.</p>
@@ -317,8 +339,8 @@
 
     <section class="testimonials section-shell" id="testimonials">
       <div class="section-heading">
-        <p class="eyebrow">Testimonials</p>
-        <h2>What students say about learning with RKC</h2>
+        <p class="eyebrow">Student Trust</p>
+        <h2>Trusted by Students Across India 🇮🇳</h2>
         <p>
           Students appreciate the clear teaching style, strong concept building, and exam-focused preparation offered at RKC Chemistry Foundation.
         </p>
@@ -407,51 +429,35 @@
 
       <div class="video-grid">
         <article class="video-card">
-          <span class="video-badge">JEE</span>
-          <h3>JEE Chemistry Videos</h3>
-          <ul class="video-topics">
-            <li>Physical Chemistry Numericals</li>
-            <li>Organic Reaction Mechanisms</li>
-            <li>Coordination Compounds</li>
-            <li>Mock Problem-Solving Sessions</li>
-          </ul>
-          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch JEE Videos</a>
+          <span class="video-badge">NEET</span>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="NEET Chemistry Video" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <h3>NEET Chemistry Videos</h3>
         </article>
 
         <article class="video-card">
-          <span class="video-badge">NEET</span>
-          <h3>NEET Chemistry Videos</h3>
-          <ul class="video-topics">
-            <li>NCERT Based Chemistry Revision</li>
-            <li>Important Named Reactions</li>
-            <li>High-Yield MCQ Practice</li>
-            <li>Fast Exam Strategy Sessions</li>
-          </ul>
-          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch NEET Videos</a>
+          <span class="video-badge">JEE</span>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="JEE Chemistry Video" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <h3>JEE Chemistry Videos</h3>
         </article>
 
         <article class="video-card">
           <span class="video-badge">CUET</span>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="CUET Chemistry Video" loading="lazy" allowfullscreen></iframe>
+          </div>
           <h3>CUET Chemistry Videos</h3>
-          <ul class="video-topics">
-            <li>Syllabus-Focused Quick Revision</li>
-            <li>Concept-Based Short Lessons</li>
-            <li>Practice Question Discussions</li>
-            <li>Topic-Wise Accuracy Building</li>
-          </ul>
-          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch CUET Videos</a>
         </article>
 
         <article class="video-card">
           <span class="video-badge">CSIR NET</span>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="CSIR NET Chemistry Video" loading="lazy" allowfullscreen></iframe>
+          </div>
           <h3>CSIR NET Chemistry Videos</h3>
-          <ul class="video-topics">
-            <li>Advanced Organic Chemistry Topics</li>
-            <li>Quantum Chemistry Concepts</li>
-            <li>Spectroscopy and Analysis</li>
-            <li>Previous Year Discussion Sessions</li>
-          </ul>
-          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch CSIR NET Videos</a>
         </article>
       </div>
     </section>
@@ -549,34 +555,22 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="social-bar footer-social" aria-label="Social media links">
-      <a class="social-icon-link social-whatsapp" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-        <span class="social-icon-label" aria-hidden="true">W</span>
-      </a>
-      <a class="social-icon-link social-youtube" href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
-        <span class="social-icon-label" aria-hidden="true">Y</span>
-      </a>
-      <a class="social-icon-link social-telegram" href="https://t.me/" target="_blank" rel="noreferrer" aria-label="Telegram">
-        <span class="social-icon-label" aria-hidden="true">T</span>
-      </a>
-      <a class="social-icon-link social-facebook" href="https://www.facebook.com/share/1AtFQuzsAV/" target="_blank" rel="noreferrer" aria-label="Facebook">
-        <span class="social-icon-label" aria-hidden="true">f</span>
-      </a>
+  <footer class="site-footer">
+    <div class="section-shell footer-grid">
+      <div>
+        <h3>RKC Chemistry Foundation</h3>
+        <p>Choose your exam, learn content, practice daily, and ask AI doubts in one modern learning platform.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+        <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/share/1AtFQuzsAV/" target="_blank" rel="noreferrer">Facebook</a>
+      </div>
     </div>
-    <p data-i18n="footer.copy">© 2026 RKC Chemistry Foundation. All rights reserved.</p>
+    <p class="footer-copy">© 2026 RKC Chemistry Foundation</p>
   </footer>
-
-  <a
-    class="floating-whatsapp"
-    href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes"
-    target="_blank"
-    rel="noreferrer"
-    aria-label="Chat on WhatsApp at 6264450138"
-  >
-    <span class="floating-icon">W</span>
-    <span class="floating-text">6264450138</span>
-  </a>
 
   <div class="chatbot" id="chatbot">
     <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
@@ -616,7 +610,109 @@
       </form>
     </section>
   </div>
+<!-- RKC AI GURU BUTTON -->
+<div id="aiBtn">🤖 AI Guru</div>
 
+<!-- CHAT BOX -->
+<div id="chatBox">
+  <div id="chatHeader">RKC AI Guru</div>
+  <div id="chatMessages"></div>
+  <div id="chatInputArea">
+    <input id="userInput" placeholder="Ask your doubt..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<style>
+#aiBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0b3d91;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#chatBox {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  flex-direction: column;
+}
+
+#chatHeader {
+  background: #0b3d91;
+  color: white;
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+
+#chatMessages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+#chatInputArea {
+  display: flex;
+}
+
+#chatInputArea input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+}
+
+#chatInputArea button {
+  background: #0b3d91;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+}
+</style>
+
+<script>
+const aiBtn = document.getElementById("aiBtn");
+const chatBox = document.getElementById("chatBox");
+
+aiBtn.onclick = () => {
+  chatBox.style.display = chatBox.style.display === "flex" ? "none" : "flex";
+};
+
+function sendMessage() {
+  let input = document.getElementById("userInput");
+  let msg = input.value;
+  if(msg === "") return;
+
+  let chat = document.getElementById("chatMessages");
+
+  chat.innerHTML += "<p><b>You:</b> " + msg + "</p>";
+
+  let reply = "I will help you with Chemistry. Answer coming soon...";
+
+  if(msg.toLowerCase().includes("hybridization")){
+    reply = "Hybridization is mixing of atomic orbitals.";
+  }
+
+  chat.innerHTML += "<p><b>RKC AI:</b> " + reply + "</p>";
+
+  input.value = "";
+  chat.scrollTop = chat.scrollHeight;
+}
+</script>
   <script src="script.js"></script>
+  <!-- 🔥 AI GURU CODE END -->
+
 </body>
 </html>
