@@ -20,8 +20,16 @@
   <header class="hero" id="home">
     <nav class="navbar">
       <a class="brand" href="#home">
-        <span class="brand-mark">RKC</span>
-        <span class="brand-text">Chemistry Foundation</span>
+        <img
+          class="brand-logo"
+          src="logo.png"
+          alt="RKC Chemistry Foundation logo"
+          onerror="this.style.display='none';"
+        >
+        <span class="brand-copy">
+          <span class="brand-mark">RKC</span>
+          <span class="brand-text">Chemistry Foundation</span>
+        </span>
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
@@ -31,24 +39,54 @@
       </button>
 
       <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#notes">Notes</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#courses" data-i18n="nav.courses">Courses</a>
+        <a href="#notes" data-i18n="nav.notes">Notes</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="lang-toggle" aria-label="Language switcher">
+        <button class="lang-btn active" id="langEn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" id="langHi" type="button" data-lang="hi" aria-pressed="false">हिंदी</button>
+      </div>
+
+      <div class="nav-profile">
+        <img
+          class="nav-profile-image"
+          src="ramu.jpg"
+          alt="Rameshwar Sir"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='none';"
+        >
+        <span class="nav-profile-name">Rameshwar Sir</span>
+      </div>
+
+      <div class="social-bar nav-social" aria-label="Social media links">
+        <a class="social-icon-link social-whatsapp" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+          <span class="social-icon-label" aria-hidden="true">W</span>
+        </a>
+        <a class="social-icon-link social-youtube" href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <span class="social-icon-label" aria-hidden="true">Y</span>
+        </a>
+        <a class="social-icon-link social-telegram" href="https://t.me/" target="_blank" rel="noreferrer" aria-label="Telegram">
+          <span class="social-icon-label" aria-hidden="true">T</span>
+        </a>
+        <a class="social-icon-link social-facebook" href="https://www.facebook.com/share/1AtFQuzsAV/" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <span class="social-icon-label" aria-hidden="true">f</span>
+        </a>
       </div>
     </nav>
 
     <section class="hero-content section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">Trusted Chemistry Learning</p>
-        <h1>Master Chemistry with RKC</h1>
-        <p class="hero-text">
-          Build strong concepts, exam confidence, and problem-solving skills with a clean,
-          focused chemistry learning experience for school and competitive exams.
+        <p class="eyebrow" data-i18n="hero.eyebrow">Trusted Chemistry Learning</p>
+        <h1 data-i18n="hero.title">Complete Chemistry Platform for Class 11, 12, JEE, NEET, CUET, CSIR NET</h1>
+        <p class="hero-text" data-i18n="hero.text">
+          Build strong concepts, improve problem-solving speed, and prepare with confidence through
+          structured chemistry learning for school, entrance, and advanced competitive exams.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#courses">Explore Courses</a>
-          <a class="button button-secondary" href="https://wa.me/916264450138" target="_blank" rel="noreferrer">WhatsApp Us</a>
+          <a class="button button-primary strong-cta" href="#courses" data-i18n="hero.cta_primary">Start Learning Now</a>
+          <a class="button button-secondary strong-cta" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" data-i18n="hero.cta_secondary">Join on WhatsApp</a>
         </div>
       </div>
 
@@ -57,15 +95,15 @@
         <div class="hero-stats">
           <div class="stat-item">
             <strong>4</strong>
-            <span>Focused Programs</span>
+            <span data-i18n="hero.stat_1">Focused Programs</span>
           </div>
           <div class="stat-item">
             <strong>100%</strong>
-            <span>Concept-Driven Teaching</span>
+            <span data-i18n="hero.stat_2">Concept-Driven Teaching</span>
           </div>
           <div class="stat-item">
             <strong>24/7</strong>
-            <span>Easy Notes Access</span>
+            <span data-i18n="hero.stat_3">Easy Notes Access</span>
           </div>
         </div>
         <div class="molecule">
@@ -82,17 +120,28 @@
   <main>
     <section class="about section-shell" id="about">
       <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Learn chemistry with clarity from Rameshwar Kumbhkar</h2>
+        <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+        <h2 data-i18n="about.title">Learn chemistry with clarity from Rameshwar Kumbhkar</h2>
       </div>
 
       <div class="about-grid">
+        <aside class="founder-profile-card">
+          <img
+            class="founder-profile-image"
+            src="ramu.jpg"
+            alt="Rameshwar Kumbhkar"
+            onerror="this.style.display='none';"
+          >
+          <h3>Rameshwar Kumbhkar</h3>
+          <p class="founder-title">Founder – RKC Chemistry Foundation</p>
+        </aside>
+
         <article class="info-panel">
-          <p>
+          <p data-i18n="about.p1">
             RKC Chemistry Foundation is led by <strong>Rameshwar Kumbhkar</strong>, focused on
             helping students understand chemistry through fundamentals, strategy, and regular practice.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             The teaching approach is designed to make difficult topics easier, strengthen core concepts,
             and support better performance in board and competitive examinations.
           </p>
@@ -100,16 +149,16 @@
 
         <aside class="feature-stack">
           <div class="feature-card">
-            <h3>Concept First</h3>
-            <p>Simple explanations that make physical, organic, and inorganic chemistry easier to retain.</p>
+            <h3 data-i18n="about.feature_1_title">Concept First</h3>
+            <p data-i18n="about.feature_1_text">Simple explanations that make physical, organic, and inorganic chemistry easier to retain.</p>
           </div>
           <div class="feature-card">
-            <h3>Exam Aligned</h3>
-            <p>Course structure tailored for Class 11, Class 12, NEET, and CSIR NET preparation.</p>
+            <h3 data-i18n="about.feature_2_title">Exam Aligned</h3>
+            <p data-i18n="about.feature_2_text">Course structure tailored for Class 11, Class 12, NEET, and CSIR NET preparation.</p>
           </div>
           <div class="feature-card">
-            <h3>Reliable Notes</h3>
-            <p>Quick-access downloadable notes for revision, practice, and last-minute recap.</p>
+            <h3 data-i18n="about.feature_3_title">Reliable Notes</h3>
+            <p data-i18n="about.feature_3_text">Quick-access downloadable notes for revision, practice, and last-minute recap.</p>
           </div>
         </aside>
       </div>
@@ -117,93 +166,384 @@
 
     <section class="courses section-shell" id="courses">
       <div class="section-heading">
-        <p class="eyebrow">Courses</p>
-        <h2>Programs built for academic strength and exam success</h2>
+        <p class="eyebrow" data-i18n="courses.eyebrow">Courses</p>
+        <h2 data-i18n="courses.title">Structured chemistry programs for every major academic stage</h2>
+        <p data-i18n="courses.text">
+          Choose a focused course path for school success, entrance preparation, and advanced competitive chemistry learning.
+        </p>
       </div>
 
       <div class="course-grid">
         <article class="course-card">
-          <span class="course-badge">Foundation</span>
-          <h3>Class 11</h3>
-          <p>Build a strong base in core chemistry concepts with chapter-wise learning and practice.</p>
+          <span class="course-badge" data-i18n="courses.class11_badge">Foundation</span>
+          <h3 data-i18n="courses.class11_title">Class 11</h3>
+          <p data-i18n="courses.class11_text">Build a strong base in core chemistry concepts with chapter-wise learning and practice.</p>
         </article>
         <article class="course-card">
-          <span class="course-badge">Boards</span>
-          <h3>Class 12</h3>
-          <p>Master syllabus coverage, important questions, and structured revision for board exams.</p>
+          <span class="course-badge" data-i18n="courses.class12_badge">Boards</span>
+          <h3 data-i18n="courses.class12_title">Class 12</h3>
+          <p data-i18n="courses.class12_text">Master syllabus coverage, important questions, and structured revision for board exams.</p>
         </article>
         <article class="course-card">
-          <span class="course-badge">Competitive</span>
-          <h3>NEET</h3>
-          <p>Focused preparation with conceptual clarity, MCQ strategy, and exam-oriented problem solving.</p>
+          <span class="course-badge" data-i18n="courses.jee_badge">Competitive</span>
+          <h3 data-i18n="courses.jee_title">JEE</h3>
+          <p data-i18n="courses.jee_text">Develop strong numerical chemistry skills, topic mastery, and exam-focused problem solving for JEE preparation.</p>
         </article>
         <article class="course-card">
-          <span class="course-badge">Advanced</span>
-          <h3>CSIR NET</h3>
-          <p>High-level chemistry preparation with deeper understanding, precision, and targeted practice.</p>
+          <span class="course-badge" data-i18n="courses.neet_badge">Medical Entrance</span>
+          <h3 data-i18n="courses.neet_title">NEET</h3>
+          <p data-i18n="courses.neet_text">Focused preparation with conceptual clarity, MCQ strategy, and exam-oriented problem solving.</p>
         </article>
+        <article class="course-card">
+          <span class="course-badge" data-i18n="courses.cuet_badge">University Entrance</span>
+          <h3 data-i18n="courses.cuet_title">CUET</h3>
+          <p data-i18n="courses.cuet_text">Study chemistry with an exam-oriented approach that supports accuracy, speed, and confidence for CUET.</p>
+        </article>
+        <article class="course-card">
+          <span class="course-badge" data-i18n="courses.csir_badge">Advanced</span>
+          <h3 data-i18n="courses.csir_title">CSIR NET</h3>
+          <p data-i18n="courses.csir_text">High-level chemistry preparation with deeper understanding, precision, and targeted practice.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="question section-shell" id="question">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="question.eyebrow">Question of the Day</p>
+        <h2 data-i18n="question.title">Practice one focused chemistry question every day</h2>
+        <p data-i18n="question.text">
+          Sharpen your thinking with a daily chemistry question designed to build accuracy, confidence, and conceptual clarity.
+        </p>
+      </div>
+
+      <div class="question-card">
+        <div class="question-meta">
+          <span class="question-tag" data-i18n="question.tag">Today's Practice</span>
+          <span class="question-level" data-i18n="question.level">NEET / Class 12 Level</span>
+        </div>
+
+        <h3 data-i18n="question.q">Which of the following has the highest pH?</h3>
+        <div class="question-options">
+          <p data-i18n="question.a">A. 0.01 M HCl</p>
+          <p data-i18n="question.b">B. 0.01 M NaOH</p>
+          <p data-i18n="question.c">C. 0.1 M CH3COOH</p>
+          <p data-i18n="question.d">D. 0.1 M NH4Cl</p>
+        </div>
+
+        <button class="button button-primary question-toggle" id="questionToggle" type="button" aria-expanded="false" data-i18n="question.show_answer">
+          Show Answer
+        </button>
+
+        <div class="question-answer" id="questionAnswer" hidden>
+          <h4 data-i18n="question.answer_title">Answer: B. 0.01 M NaOH</h4>
+          <p data-i18n="question.answer_text">
+            Sodium hydroxide is a strong base and provides the highest concentration of OH- ions among the given options,
+            so it has the highest pH.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="notes section-shell" id="notes">
       <div class="section-heading">
-        <p class="eyebrow">Notes</p>
-        <h2>Download quick revision material</h2>
+        <p class="eyebrow" data-i18n="notes.eyebrow">Notes</p>
+        <h2 data-i18n="notes.title">Free downloadable PDF notes for quick revision</h2>
+        <p data-i18n="notes.text">
+          Access free chemistry PDF notes designed for board preparation, concept review, and competitive exam practice.
+        </p>
+      </div>
+
+      <div class="notes-filters" id="notesFilters" aria-label="Filter notes by category">
+        <button class="notes-filter active" type="button" data-filter="all" aria-pressed="true" data-i18n="notes.filter_all">All</button>
+        <button class="notes-filter" type="button" data-filter="class11" aria-pressed="false" data-i18n="notes.filter_class11">Class 11</button>
+        <button class="notes-filter" type="button" data-filter="class12" aria-pressed="false" data-i18n="notes.filter_class12">Class 12</button>
+        <button class="notes-filter" type="button" data-filter="neet" aria-pressed="false" data-i18n="notes.filter_neet">NEET</button>
+        <button class="notes-filter" type="button" data-filter="jee" aria-pressed="false" data-i18n="notes.filter_jee">JEE</button>
+        <button class="notes-filter" type="button" data-filter="cuet" aria-pressed="false" data-i18n="notes.filter_cuet">CUET</button>
+        <button class="notes-filter" type="button" data-filter="csirnet" aria-pressed="false" data-i18n="notes.filter_csirnet">CSIR NET</button>
       </div>
 
       <div class="notes-list">
-        <article class="note-card">
+        <article class="note-card" data-category="class11">
           <div>
-            <h3>Class 11 Chemistry Notes</h3>
-            <p>Chapter-wise concise notes for theory revision and classroom support.</p>
+            <h3 data-i18n="notes.class11_title">Class 11 PDF Notes</h3>
+            <p data-i18n="notes.class11_text">Free chapter-wise PDF notes for concept building, theory revision, and classroom support.</p>
           </div>
-          <button class="button button-primary note-download" data-note="Class 11 Chemistry Notes">Download</button>
+          <button class="button button-primary note-download" data-note-key="notes.class11_title" data-i18n="common.download_pdf">Download PDF</button>
         </article>
 
-        <article class="note-card">
+        <article class="note-card" data-category="class12">
           <div>
-            <h3>Class 12 Chemistry Notes</h3>
-            <p>Board-focused notes designed for fast revision and better answer writing.</p>
+            <h3 data-i18n="notes.class12_title">Class 12 PDF Notes</h3>
+            <p data-i18n="notes.class12_text">Free board-focused PDF notes designed for fast revision, important topics, and better answer writing.</p>
           </div>
-          <button class="button button-primary note-download" data-note="Class 12 Chemistry Notes">Download</button>
+          <button class="button button-primary note-download" data-note-key="notes.class12_title" data-i18n="common.download_pdf">Download PDF</button>
         </article>
 
-        <article class="note-card">
+        <article class="note-card" data-category="neet">
           <div>
-            <h3>NEET Chemistry Notes</h3>
-            <p>Exam-ready summaries with key formulas, reactions, and high-yield concepts.</p>
+            <h3 data-i18n="notes.neet_title">NEET PDF Notes</h3>
+            <p data-i18n="notes.neet_text">Free exam-ready PDF notes with key formulas, reactions, and high-yield chemistry concepts.</p>
           </div>
-          <button class="button button-primary note-download" data-note="NEET Chemistry Notes">Download</button>
+          <button class="button button-primary note-download" data-note-key="notes.neet_title" data-i18n="common.download_pdf">Download PDF</button>
         </article>
 
-        <article class="note-card">
+        <article class="note-card" data-category="jee">
           <div>
-            <h3>CSIR NET Chemistry Notes</h3>
-            <p>Advanced notes for structured topic review and problem-solving preparation.</p>
+            <h3 data-i18n="notes.jee_title">JEE PDF Notes</h3>
+            <p data-i18n="notes.jee_text">Free PDF notes for advanced problem-solving, numerical practice, and concept-based preparation.</p>
           </div>
-          <button class="button button-primary note-download" data-note="CSIR NET Chemistry Notes">Download</button>
+          <button class="button button-primary note-download" data-note-key="notes.jee_title" data-i18n="common.download_pdf">Download PDF</button>
+        </article>
+
+        <article class="note-card" data-category="cuet">
+          <div>
+            <h3 data-i18n="notes.cuet_title">CUET PDF Notes</h3>
+            <p data-i18n="notes.cuet_text">Free PDF notes for university entrance preparation, topic revision, and strong concept clarity.</p>
+          </div>
+          <button class="button button-primary note-download" data-note-key="notes.cuet_title" data-i18n="common.download_pdf">Download PDF</button>
+        </article>
+
+        <article class="note-card" data-category="csirnet">
+          <div>
+            <h3 data-i18n="notes.csir_title">CSIR NET PDF Notes</h3>
+            <p data-i18n="notes.csir_text">Free PDF notes for advanced chemistry preparation, deeper theory review, and concept-driven study.</p>
+          </div>
+          <button class="button button-primary note-download" data-note-key="notes.csir_title" data-i18n="common.download_pdf">Download PDF</button>
         </article>
       </div>
 
       <p class="notes-message" id="notesMessage" aria-live="polite"></p>
     </section>
 
+    <section class="testimonials section-shell" id="testimonials">
+      <div class="section-heading">
+        <p class="eyebrow">Testimonials</p>
+        <h2>What students say about learning with RKC</h2>
+        <p>
+          Students appreciate the clear teaching style, strong concept building, and exam-focused preparation offered at RKC Chemistry Foundation.
+        </p>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>
+            "Rameshwar sir explains chemistry in a very simple way. My understanding of reactions and concepts improved a lot."
+          </p>
+          <h3>Priya S.</h3>
+          <span>Class 12 Student</span>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>
+            "The notes and daily practice helped me stay consistent. The classes are clear, focused, and very useful for NEET preparation."
+          </p>
+          <h3>Ankit M.</h3>
+          <span>NEET Aspirant</span>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>
+            "I used to find chemistry difficult, but after joining RKC Chemistry Foundation I became much more confident in solving questions."
+          </p>
+          <h3>Ritika K.</h3>
+          <span>Class 11 Student</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="roadmap section-shell" id="roadmap">
+      <div class="section-heading">
+        <p class="eyebrow">Chemistry Career Roadmap</p>
+        <h2>Follow a guided chemistry journey from foundation to advanced success</h2>
+        <p>
+          Progress step by step from core classroom learning to entrance preparation and higher-level chemistry goals.
+        </p>
+      </div>
+
+      <div class="roadmap-track">
+        <article class="roadmap-step">
+          <span class="roadmap-index">01</span>
+          <h3>Class 11</h3>
+          <p>Start with fundamentals, chemical principles, and concept-building that forms the base for every future exam.</p>
+        </article>
+
+        <div class="roadmap-arrow" aria-hidden="true">→</div>
+
+        <article class="roadmap-step">
+          <span class="roadmap-index">02</span>
+          <h3>Class 12</h3>
+          <p>Strengthen advanced topics, master board-oriented preparation, and build a sharper chemistry problem-solving approach.</p>
+        </article>
+
+        <div class="roadmap-arrow" aria-hidden="true">→</div>
+
+        <article class="roadmap-step roadmap-step-highlight">
+          <span class="roadmap-index">03</span>
+          <h3>JEE / NEET / CUET</h3>
+          <p>Choose your competitive path and prepare with targeted revision, MCQs, numerical practice, and exam strategy.</p>
+        </article>
+
+        <div class="roadmap-arrow" aria-hidden="true">→</div>
+
+        <article class="roadmap-step">
+          <span class="roadmap-index">04</span>
+          <h3>CSIR NET</h3>
+          <p>Move toward advanced chemistry learning with deeper theory, high-level practice, and research-oriented preparation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="videos section-shell" id="videos">
+      <div class="section-heading">
+        <p class="eyebrow">Video Topics</p>
+        <h2>Categorized chemistry video learning for every exam goal</h2>
+        <p>
+          Explore topic-wise video categories designed for competitive preparation, concept clarity, and smart revision.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <article class="video-card">
+          <span class="video-badge">JEE</span>
+          <h3>JEE Chemistry Videos</h3>
+          <ul class="video-topics">
+            <li>Physical Chemistry Numericals</li>
+            <li>Organic Reaction Mechanisms</li>
+            <li>Coordination Compounds</li>
+            <li>Mock Problem-Solving Sessions</li>
+          </ul>
+          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch JEE Videos</a>
+        </article>
+
+        <article class="video-card">
+          <span class="video-badge">NEET</span>
+          <h3>NEET Chemistry Videos</h3>
+          <ul class="video-topics">
+            <li>NCERT Based Chemistry Revision</li>
+            <li>Important Named Reactions</li>
+            <li>High-Yield MCQ Practice</li>
+            <li>Fast Exam Strategy Sessions</li>
+          </ul>
+          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch NEET Videos</a>
+        </article>
+
+        <article class="video-card">
+          <span class="video-badge">CUET</span>
+          <h3>CUET Chemistry Videos</h3>
+          <ul class="video-topics">
+            <li>Syllabus-Focused Quick Revision</li>
+            <li>Concept-Based Short Lessons</li>
+            <li>Practice Question Discussions</li>
+            <li>Topic-Wise Accuracy Building</li>
+          </ul>
+          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch CUET Videos</a>
+        </article>
+
+        <article class="video-card">
+          <span class="video-badge">CSIR NET</span>
+          <h3>CSIR NET Chemistry Videos</h3>
+          <ul class="video-topics">
+            <li>Advanced Organic Chemistry Topics</li>
+            <li>Quantum Chemistry Concepts</li>
+            <li>Spectroscopy and Analysis</li>
+            <li>Previous Year Discussion Sessions</li>
+          </ul>
+          <a class="button button-secondary video-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Watch CSIR NET Videos</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="goals section-shell" id="goals">
+      <div class="section-heading">
+        <p class="eyebrow">Choose Your Goal</p>
+        <h2>Select your target and explore the right chemistry path</h2>
+        <p>
+          Choose your exam goal to see the kind of chemistry preparation focus that can help you move forward with clarity.
+        </p>
+      </div>
+
+      <div class="goal-grid" id="goalGrid">
+        <button class="goal-card active" type="button" data-goal="iit" aria-pressed="true">
+          <span class="goal-tag">Engineering</span>
+          <h3>IIT (JEE)</h3>
+          <p>Build numerical strength, concept precision, and advanced problem-solving skills.</p>
+        </button>
+
+        <button class="goal-card" type="button" data-goal="mbbs" aria-pressed="false">
+          <span class="goal-tag">Medical</span>
+          <h3>MBBS (NEET)</h3>
+          <p>Master NCERT chemistry, accuracy-based MCQs, and fast revision strategy.</p>
+        </button>
+
+        <button class="goal-card" type="button" data-goal="cuet" aria-pressed="false">
+          <span class="goal-tag">University Entrance</span>
+          <h3>CUET</h3>
+          <p>Focus on syllabus coverage, concept recall, and exam-oriented practice sessions.</p>
+        </button>
+
+        <button class="goal-card" type="button" data-goal="csirnet" aria-pressed="false">
+          <span class="goal-tag">Advanced Chemistry</span>
+          <h3>CSIR NET</h3>
+          <p>Prepare for higher-level chemistry with deep theory, analysis, and advanced questions.</p>
+        </button>
+      </div>
+
+      <div class="goal-detail" id="goalDetail" aria-live="polite">
+        <h3>IIT (JEE) Chemistry Track</h3>
+        <p>
+          Strengthen physical chemistry numericals, reaction mechanisms, and analytical thinking with a preparation style built for IIT-JEE chemistry demands.
+        </p>
+      </div>
+    </section>
+
+    <section class="coming-soon section-shell" id="coming-soon">
+      <div class="section-heading">
+        <p class="eyebrow">Coming Soon</p>
+        <h2>More subjects are on the way for complete exam preparation</h2>
+        <p>
+          RKC is expanding beyond chemistry with focused support for other core subjects to build a stronger all-round learning platform.
+        </p>
+      </div>
+
+      <div class="coming-grid">
+        <article class="coming-card">
+          <span class="coming-badge">Launching Soon</span>
+          <h3>Physics</h3>
+          <p>Concept-driven problem solving, numericals, and exam-oriented preparation modules are coming soon.</p>
+        </article>
+        <article class="coming-card">
+          <span class="coming-badge">Launching Soon</span>
+          <h3>Maths</h3>
+          <p>Structured maths practice, shortcut techniques, and topic-wise mastery sessions are on the way.</p>
+        </article>
+        <article class="coming-card">
+          <span class="coming-badge">Launching Soon</span>
+          <h3>Biology</h3>
+          <p>Clear theory breakdowns, quick revision support, and exam-focused biology learning will be added soon.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="contact section-shell" id="contact">
       <div class="contact-panel">
         <div class="section-heading left-aligned">
-          <p class="eyebrow">Contact</p>
-          <h2>Start learning with RKC Chemistry Foundation</h2>
-          <p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Start learning with RKC Chemistry Foundation</h2>
+          <p data-i18n="contact.text">
             Reach out for admissions, course details, and note access. We are available on WhatsApp for quick support.
           </p>
         </div>
 
         <div class="contact-actions">
-          <a class="button button-primary large" href="https://wa.me/916264450138" target="_blank" rel="noreferrer">
+          <a class="button button-primary large" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" data-i18n="contact.cta">
             Chat on WhatsApp
           </a>
-          <a class="contact-number" href="https://wa.me/916264450138" target="_blank" rel="noreferrer">
-            WhatsApp: 6264450138
+          <a class="contact-number" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer">
+            <span data-i18n="contact.whatsapp">WhatsApp: 6264450138</span>
           </a>
         </div>
       </div>
@@ -211,8 +551,72 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 RKC Chemistry Foundation. All rights reserved.</p>
+    <div class="social-bar footer-social" aria-label="Social media links">
+      <a class="social-icon-link social-whatsapp" href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+        <span class="social-icon-label" aria-hidden="true">W</span>
+      </a>
+      <a class="social-icon-link social-youtube" href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
+        <span class="social-icon-label" aria-hidden="true">Y</span>
+      </a>
+      <a class="social-icon-link social-telegram" href="https://t.me/" target="_blank" rel="noreferrer" aria-label="Telegram">
+        <span class="social-icon-label" aria-hidden="true">T</span>
+      </a>
+      <a class="social-icon-link social-facebook" href="https://www.facebook.com/share/1AtFQuzsAV/" target="_blank" rel="noreferrer" aria-label="Facebook">
+        <span class="social-icon-label" aria-hidden="true">f</span>
+      </a>
+    </div>
+    <p data-i18n="footer.copy">© 2026 RKC Chemistry Foundation. All rights reserved.</p>
   </footer>
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/916264450138?text=Hello%20sir%2C%20I%20want%20to%20join%20RKC%20Chemistry%20classes"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="Chat on WhatsApp at 6264450138"
+  >
+    <span class="floating-icon">W</span>
+    <span class="floating-text">6264450138</span>
+  </a>
+
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
+      <span class="chatbot-toggle-icon">AI</span>
+      <span class="chatbot-toggle-text">RKC AI Guru</span>
+    </button>
+
+    <section class="chatbot-panel" id="chatbotPanel" hidden>
+      <header class="chatbot-header">
+        <div>
+          <p class="chatbot-kicker">Smart Study Assistant</p>
+          <h3>RKC AI Guru</h3>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close chatbot">×</button>
+      </header>
+
+      <div class="chatbot-messages" id="chatbotMessages" aria-live="polite">
+        <article class="chat-message chat-message-bot">
+          <p>Hello 👋 I am RKC AI Guru. I will help you with Chemistry, study plans and exam guidance.</p>
+        </article>
+      </div>
+
+      <div class="chatbot-quick-actions">
+        <button class="chatbot-chip" type="button" data-chat-prompt="Ask Doubt">Ask Doubt</button>
+        <button class="chatbot-chip" type="button" data-chat-prompt="Study Plan">Study Plan</button>
+        <button class="chatbot-chip" type="button" data-chat-prompt="Motivation">Motivation</button>
+      </div>
+
+      <form class="chatbot-form" id="chatbotForm">
+        <input
+          class="chatbot-input"
+          id="chatbotInput"
+          type="text"
+          placeholder="Ask RKC AI Guru anything about Chemistry, JEE, NEET, CUET, CSIR NET or study strategy..."
+        >
+        <button class="button button-primary chatbot-send" type="submit">Send</button>
+      </form>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
